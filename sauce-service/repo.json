@@ -1,0 +1,22 @@
+{
+  "Variables": [
+    {
+      "Name": "input",
+      "Type": "EnvironmentVariable",
+      "InputType": "InputTopic",
+      "Description": "Name of the input topic to listen to.",
+      "DefaultValue": "pizza",
+      "Required": false
+    },
+    {
+      "Name": "output",
+      "Type": "EnvironmentVariable",
+      "InputType": "OutputTopic",
+      "Description": "Name of the output topic to write to.",
+      "DefaultValue": "pizza-with-sauce",
+      "Required": false
+    }
+  ],
+  "EntryPoint": "build/dockerfile",
+  "RunEntryPoint": "main.py"
+}
